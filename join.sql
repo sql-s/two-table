@@ -1,3 +1,3 @@
-select cust.id, cust.name, cust.surname, cust.age, cust.phone_number
+select cust.name, cust.surname, o.product_name
 from customers cust
-left join orders o on cust.name ILIKE 'alexey';
+inner join orders o on cust.name ILIKE 'alexey';w
